@@ -1,0 +1,438 @@
+ /* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html{
+  margin: 0;
+  font-family: 'Antonio', sans-serif;
+}
+
+/******************************************
+/* START HERE
+/*******************************************/
+
+.main-nav, .header-items, .dark-section, .light-section {
+  text-align: center;
+  margin: 50px auto;
+}
+
+p, a {
+  font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.main-button a {
+  display: inline-block;
+  padding: 15px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Antonio", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: rgb(68, 73, 78);
+  border: 1px solid;
+}
+
+header {
+  background-color: #617283;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.logo {
+  float: left;
+}
+
+.main-nav {
+  margin: 0;
+  float:right;
+  text-align: right;
+  font-weight: 600;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav li {
+  display: block;
+  list-style-type: none;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#button-cta {
+  display: inline-block;
+  background-color: white;
+  color: #617283;
+  padding: 10px;
+  margin-right: 10px;
+  border: 0px solid;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.header-items {
+  width: 90%;
+  max-width: 1000px;
+  padding-top: 25px;
+}
+
+h1, .header-desc {
+  margin-top: 50px;
+}
+
+.header-desc {
+  font-weight: 500;;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.header-items p {
+  font-family: "Antonio", sans-serif;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+
+#header-cta {
+  margin-top: 40px;
+}
+
+#header-cta img {
+  max-height: 1em;
+  padding-right: 5px;
+}
+
+.header-items a {
+  text-decoration: none;
+  color: lightgray;
+  font-size: 1.2em;
+}
+
+.light-section {
+  width: 70%;
+  max-width: 700px;
+  padding: 4%;
+}
+
+h2 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.dark-section {
+  background-color: #c6cfd8;
+  padding: 20px;
+}
+
+.dark-section img {
+  width: 100%;
+  height: auto;
+  margin: 50px auto 30px;
+}
+
+.column-desc {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+
+h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+footer p, footer ol {
+  padding:0;
+  margin:0;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #1c1e22;
+  color: white;
+}
+
+footer .container, footer .bottom-footer {
+  width: 90%;
+  margin: auto;
+}
+
+.social-icons {
+  margin-bottom: 50px;
+}
+
+.social-icons img {
+  margin: 0 10px;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: gray;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.brand-info p {
+  font-size: 1.2em;
+}
+
+footer .email {
+  padding: 10px 0 20px 0;
+  font-weight: 600;
+}
+
+hr {
+  margin: 40px auto 20px;
+}
+
+.bottom-footer p, .bottom-footer img {
+  display: inline-block;
+  margin: 10px;
+  font-weight: 600;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media screen and (max-width: 500px) {
+
+  footer li {
+    text-align: center;
+    display: block;
+    list-style-type: none;
+    margin: 0 25px;
+    padding: 20px 0;
+  }
+
+  .main-button a {
+    display: inline-block;
+    padding: 15px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Antonio", sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: rgb(68, 73, 78);
+    border: 1px solid;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  
+  .dark-section img {
+    width: 80%;
+  }
+
+  .footer-nav {
+    float: left;
+    width: 60%
+  }
+
+  footer p, footer a, footer h4 {
+    font-size: 14px !important;
+  }
+
+  .footer-nav .links h4 {
+    margin-bottom: 0;
+  }
+
+  .social-icons {
+    margin: 0;
+    text-align: left;
+  }
+
+  .social-icons img {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0;
+    max-height: 30px;
+    width: auto;
+  }
+
+  .social-icons img:first-child {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 20px;
+  }
+
+  .footer-nav .links {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .footer-nav h4 {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .brand-info {
+    float: right;
+    width: 40%;
+    text-align: left;
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+
+  .navbar {
+    position: relative;
+  }
+
+  .logo {
+    float: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-height: 60px;
+  }
+
+  .main-nav ul {
+    text-align: left;
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .main-nav li {
+    display: inline;
+  }
+
+  #button-cta {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+  }
+
+  h1 {
+    font-size: 5.5em;
+  }
+
+  .header-items {
+    margin: 10% auto;
+  }
+
+  .header-items p {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 2.8em;
+  }
+
+  .light-section {
+    margin: 5% auto;
+  }
+
+  .light-section p {
+    font-size: 1.2em;
+  }
+
+  .dark-section {
+    padding: 5%;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  .dark-section p {
+    font-size: 1.3em;
+  }
+
+  .dark-section img {
+    max-width: 500px;
+  }
+
+  .column-desc .main-button {
+    padding-top: 3%;
+  }
+
+  .column-left {
+    float: left;
+    width: 50%;
+  }
+
+  .column-right {
+    float: right;
+    width: 50%;
+  }
+
+  .bottom-footer {
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  .footer-nav {
+    width: 80%;
+    margin: auto 0 0 auto;
+  }
+
+  .brand-info {
+    width: 20%;
+    max-width: 200px;
+  }
+
+  .legal {
+    display: block;
+    float: left;
+    width: 80%;
+    text-align: left;
+  }
+
+  .footer-logo {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: block;
+    float: right;
+    max-height: 30px;
+  }
+
+}
